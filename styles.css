@@ -1,0 +1,221 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: SFProDisplay;
+  font-size: 21px;
+  line-height: 1.5rem;
+}
+
+header > h1 {
+  padding: 0 0 0 20vw;
+  font-size: 1.5rem;
+}
+
+header > h2 {
+  font-size: 4rem;
+  line-height: 6rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+  text-decoration: none;
+  width: 500px;
+  overflow-wrap: normal;
+}
+
+header abbr {
+  background: -webkit-linear-gradient(rgb(245, 12, 214), rgb(255, 173, 10));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.preamble, .explanation, .participation, .benefits, .requirements {
+  text-align: justify;
+  width: 600px;
+  margin: auto;
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+
+.preamble > h3 {
+  margin-top: 500px;
+}
+
+.preamble > p, .explanation > p, .participation > p, .benefits > p, .requirements > p {
+  color: #a1a1a6;
+}
+
+.summary {
+  visibility: hidden;
+}
+
+.preamble::before{
+  content: '    ';
+  padding: 350px 450px;
+  background-image: url('mac1.png');
+  position:relative; 
+  background-size: cover;
+  margin-left: -8vw;
+}
+
+.explanation > h3 {
+  margin-top: 600px;
+}
+ 
+.explanation > h3::after{
+  content: '    ';
+  padding: 400px 320px;
+  background-image: url('dark-ipad-full.jpeg');
+  position:relative; 
+  background-size: cover;
+  margin-left: 30vw;
+}
+
+.explanation {
+  margin-left: 10vw;
+}
+
+.benefits > h3 {
+  margin-top: 400px;
+}
+ 
+.benefits::before{
+  content: '    ';
+  padding: 300px 500px;
+  background-image: url('dark-ipad.jpeg');
+  position:relative; 
+  background-size: cover;
+  margin-left: -15vw;
+}
+
+@font-face {
+  font-family: SFProDisplay;
+  src: url(/sf-pro-display-cufonfonts/SFPRODISPLAYMEDIUM.OTF);
+}
+
+.design-name {
+  text-decoration: none;
+  background: -webkit-linear-gradient(rgb(20, 177, 255), rgb(6, 254, 72));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.designer-name {
+  color: white;
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.design-selection li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 40px 50px;
+  width: 30vw;
+}
+
+.design-selection li:nth-child(2n+1) {
+  clear: left;
+}
+
+.design-archives, .zen-resources {
+  clear: left;
+}
+
+.design-name {
+  display: block;
+  margin-bottom: 0.25em;
+}
+
+.design-selection ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10vw;
+}
+
+.select { 
+  visibility: hidden;
+}
+
+footer {
+  display: flex;
+  margin: 4vh 20vw 0 20vw;
+}
+
+footer a {
+  display: block;
+  padding: 0.75rem 2rem;
+  margin-right: 8vw;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+
+.requirements {
+  margin-bottom: 10vh;
+}
+
+footer a:nth-child(1) {
+  background-image: linear-gradient(0.25turn,rgb(255, 0, 208), rgb(47, 0, 255));
+}
+
+footer a:nth-child(2) {
+  background-image: linear-gradient(0.25turn,rgb(47, 0, 255), rgb(0, 225, 255));
+}
+
+footer a:nth-child(3) {
+  background-image: linear-gradient(0.25turn, rgb(0, 225, 255),rgb(30, 255, 0));
+}
+
+footer a:nth-child(4) {
+  background-image: linear-gradient(0.25turn,rgb(30, 255, 0), rgb(255, 153, 0));
+}
+
+footer a:nth-child(5) {
+  background-image: linear-gradient(0.25turn, rgb(255, 153, 0),rgb(255, 0, 0));
+}
+
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: rgb(243, 241, 241);
+    color: darkslategrey;
+  }
+
+  .preamble::before{
+    background-image: url('light-macbook.jpeg')
+  }
+}
+
+@media screen and (max-width: 734px) {
+  body {
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 0em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  }  
+  
+}
+
+.design-archives, .zen-resources {
+  background-color: rgb(214, 211, 211);
+  margin: 0px;
+  padding: 20px 50px 20px 50px;
+  
+}
+
+.design-archives li, .zen-resources li {
+  list-style: none;
+}
+
+.design-archives a, .zen-resources a {
+  text-decoration: none;
+  color: darkslategrey;
+  line-height: 2rem;
+}
